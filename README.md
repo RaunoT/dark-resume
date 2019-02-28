@@ -2,6 +2,8 @@
 
 Dark Resume is based on [Resume](https://startbootstrap.com/template-overviews/resume/) - a CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
+![Screenshot of page](https://i.imgur.com/u5fInoi.png)
+
 ## Setup
 
 Clone the repo: `git clone https://github.com/RaunoT/dark-resume`
