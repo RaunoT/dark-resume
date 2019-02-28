@@ -126,6 +126,22 @@ function minifyJs() {
 
 gulp.task('dist', gulp.series('vendor', cleanDist, build, renameSources, compileSass, concatCss, minifyCss, concatJs, minifyJs));
 
+// Github pages tasks
+function cleanGitDist() {
+	return del('./docs**');
+}
+
+function copyDist() {
+	return gulp.src([
+			'./dist/**/*'
+		], {
+			base: './dist'
+		})
+		.pipe(gulp.dest('./docs'));
+}
+
+gulp.task('gitDist', gulp.series('dist', cleanGitDist, copyDist));
+
 // Dev task
 gulp.task('dev', function () {
 	browsersync.init({
