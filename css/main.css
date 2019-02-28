@@ -21,7 +21,7 @@ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #fff;
-  background: #191500;
+  background: #110f01;
   overflow-x: hidden; }
 
 @media (min-width: 992px) {
@@ -136,7 +136,7 @@ p.lead {
       display: none; } }
 
 #sideNav {
-  background: #191500; }
+  background: #110f01; }
   #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 800;
     letter-spacing: 0.05rem;
