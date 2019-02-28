@@ -18,6 +18,8 @@ After installation, run `npm install` and then `gulp dev` which will open up a p
 
 * `gulp dist` - Builds everything and moves it into **dist** folder for production
 
+* `gulp gitDist` - Builds everything and moves it from **dist**  to **docs** folder for GitHub Pages
+
 ## Copyright and License
 
 Copyright © 2019 Rauno Tegelmann.
