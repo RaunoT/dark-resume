@@ -41,8 +41,11 @@ function fillVendor() {
 	gulp.src('./node_modules/waypoints/lib/jquery.waypoints.min.js')
 		.pipe(gulp.dest('./js/vendor/waypoints'))
 	// Animate.css
-	return gulp.src('./node_modules/animate.css/animate.min.css')
+	gulp.src('./node_modules/animate.css/animate.min.css')
 		.pipe(gulp.dest('./css/vendor/animate.css'))
+	// Hover.css
+	return gulp.src('./node_modules/hover.css/css/hover-min.css')
+		.pipe(gulp.dest('./css/vendor/hover.css'))
 }
 
 gulp.task('vendor', gulp.series(cleanVendor, fillVendor));
@@ -81,6 +84,7 @@ function concatCss() {
 			'./css/vendor/bootstrap/bootstrap.min.css',
 			'./css/vendor/fancybox/jquery.fancybox.min.css',
 			'./css/vendor/animate.css/animate.min.css',
+			'./css/vendor/hover.css/hover-min.css',
 			'./css/main.css'
 		])
 		.pipe(concat('main.css'))
