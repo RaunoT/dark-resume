@@ -203,12 +203,8 @@ hr {
 hr.grow {
   width: 33%; }
 
-.delay-fast {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-
-.delay-slow {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s; }
+.delay {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
 
 /*# sourceMappingURL=main.css.map */

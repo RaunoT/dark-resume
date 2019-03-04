@@ -75,31 +75,25 @@ $(document).ready(function () {
 	});
 
 	$("#waypoint-7").waypoint(function () {
-		$("#project-1").addClass("animated fadeInUp delay-fast");
+		$("#project-1").addClass("animated fadeInUp");
 		$("#project-1").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
 	$("#waypoint-8").waypoint(function () {
-		$("#project-2").addClass("animated fadeInUp delay-fast");
+		$("#project-2").addClass("animated fadeInUp");
 		$("#project-2").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
 	$("#waypoint-9").waypoint(function () {
-		$("#project-3").addClass("animated fadeInUp delay-fast");
+		$("#project-3").addClass("animated fadeInUp");
 		$("#project-3").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
-
-/* 	if ($(window).width() > 992) {
-		$("#project-1").addClass("delay");
-		$("#project-2").addClass("delay");
-		$("#project-3").addClass("delay");
-	} */
 
 	$(".img-project").waypoint(function () {
 		$(this.element).addClass('animated fadeInUp');
@@ -109,7 +103,7 @@ $(document).ready(function () {
 	});
 
 	$(".resume-content .btn").waypoint(function () {
-		$(this.element).addClass('animated fadeInUp delay-slow');
+		$(this.element).addClass('animated fadeInUp delay');
 		$(this.element).css("visibility", "visible");
 	}, {
 		offset: "85%"
@@ -120,6 +114,12 @@ $(document).ready(function () {
 	}, {
 		offset: "75%"
 	});
+
+	if ($(window).width() > 992) {
+		$("#project-1").addClass("delay");
+		$("#project-2").addClass("delay");
+		$("#project-3").addClass("delay");
+	}
 
 	// fancyBox
 	$("[data-fancybox]").fancybox({
