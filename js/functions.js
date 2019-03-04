@@ -9,7 +9,7 @@
 			if (target.length) {
 				$('html, body').animate({
 					scrollTop: (target.offset().top)
-				}, 1000, "easeInOutExpo");
+				}, 750, "easeInOutExpo");
 				return false;
 			}
 		}
@@ -20,18 +20,13 @@
 		$('.navbar-collapse').collapse('hide');
 	});
 
-	// Activate scrollspy to add active class to navbar items on scroll
-	$('body').scrollspy({
-		target: '#side-nav'
-	});
-
 })(jQuery); // End of use strict
 
 $(document).ready(function () {
 
 	// Animations on waypoint
 	$(".social-icons").waypoint(function () {
-		$(".social-icons > a").addClass("animated zoomIn");
+		$(".social-icons > a").addClass("animated zoomIn hvr-float");
 		$(".social-icons").css("visibility", "visible");
 	}, {
 		offset: "80%"
@@ -59,15 +54,15 @@ $(document).ready(function () {
 	});
 
 	$("#waypoint-4").waypoint(function () {
-		$("#resume-content-1").addClass("animated bounceInUp");
-		$("#resume-content-1").css("visibility", "visible");
+		$("#education-content-1").addClass("animated bounceInUp");
+		$("#education-content-1").css("visibility", "visible");
 	}, {
 		offset: "100%"
 	});
 
 	$("#waypoint-5").waypoint(function () {
-		$("#resume-content-2").addClass("animated bounceInUp");
-		$("#resume-content-2").css("visibility", "visible");
+		$("#education-content-2").addClass("animated bounceInUp");
+		$("#education-content-2").css("visibility", "visible");
 	}, {
 		offset: "100%"
 	});
@@ -80,29 +75,41 @@ $(document).ready(function () {
 	});
 
 	$("#waypoint-7").waypoint(function () {
-		$("#project-1").addClass("animated fadeInUp");
+		$("#project-1").addClass("animated fadeInUp delay-fast");
 		$("#project-1").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
 	$("#waypoint-8").waypoint(function () {
-		$("#project-2").addClass("animated fadeInUp");
+		$("#project-2").addClass("animated fadeInUp delay-fast");
 		$("#project-2").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
 	$("#waypoint-9").waypoint(function () {
-		$("#project-3").addClass("animated fadeInUp");
+		$("#project-3").addClass("animated fadeInUp delay-fast");
 		$("#project-3").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
+/* 	if ($(window).width() > 992) {
+		$("#project-1").addClass("delay");
+		$("#project-2").addClass("delay");
+		$("#project-3").addClass("delay");
+	} */
 
-	$(".project-image").waypoint(function () {
-		$(this.element).addClass('animated zoomIn');
+	$(".img-project").waypoint(function () {
+		$(this.element).addClass('animated fadeInUp');
+		$(this.element).css("visibility", "visible");
+	}, {
+		offset: "85%"
+	});
+
+	$(".resume-content .btn").waypoint(function () {
+		$(this.element).addClass('animated fadeInUp delay-slow');
 		$(this.element).css("visibility", "visible");
 	}, {
 		offset: "85%"
@@ -119,27 +126,20 @@ $(document).ready(function () {
 		toolbar: false
 	});
 
-	$('.beautyartistkristi-gallery').click(function () {
-		$.fancybox([{
-			href: '#beautyartistkristi-gallery'
-		}]);
+	// Navbar
+	$(".navbar").children().click(function () {
+		if ($('.navbar-toggler').hasClass('collapsed')) {
+			$('#side-nav').css("background", "#110f01");
+		} else {
+			setTimeout(function () {
+				$('#side-nav').css("background", "transparent");
+			}, 200);
+		}
 	});
-});
-
-
-
-$('.navbar').children().click(function () {
-	if ($('.navbar-toggler').hasClass('collapsed')) {
-		$('#side-nav').css("background", "#110f01");
-	} else {
+	
+	$('.nav-link').click(function () {
 		setTimeout(function () {
 			$('#side-nav').css("background", "transparent");
 		}, 200);
-	}
-});
-
-$('.nav-link').click(function () {
-	setTimeout(function () {
-		$('#side-nav').css("background", "transparent");
-	}, 200);
+	});
 });

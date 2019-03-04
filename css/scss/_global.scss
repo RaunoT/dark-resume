@@ -5,6 +5,7 @@ body {
 	background: $dark;
 	color: $white;
 	overflow-x: hidden;
+	padding-top: 3rem;
 
 	@media (min-width: 992px) {
 		padding-top: 0;

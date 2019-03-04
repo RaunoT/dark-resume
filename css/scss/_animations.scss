@@ -3,12 +3,12 @@
 // Hide before animation
 .dev-icons,
 .social-icons,
+.img-project,
+.resume-content .btn,
 #workflow,
 #languages,
-#resume-content-1,
-#resume-content-2,
-#resume-date-1,
-#resume-date-2,
+#education-content-1,
+#education-content-2,
 #experience-1,
 #project-1,
 #project-2,
@@ -39,4 +39,12 @@
 
 hr.grow {
 	width: 33%;
+}
+
+.delay-fast {
+	animation-delay: 0.3s;
+}
+
+.delay-slow {
+	animation-delay: 0.75s;
 }
