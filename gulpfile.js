@@ -130,15 +130,17 @@ function minifyJs() {
 
 gulp.task('dist', gulp.series('vendor', cleanDist, build, renameSources, compileSass, concatCss, minifyCss, concatJs, minifyJs));
 
-// Dev task
-gulp.task('dev', function () {
+// Default task
+gulp.task('default', gulp.series('vendor', compileSass, concatCss, concatJs));
+
+// Dev tasks
+function watch () {
 	browsersync.init({
 		server: './'
 	});
 	gulp.watch('./css/scss/**/*.scss', gulp.series(compileSass, concatCss));
 	gulp.watch(["./js/**/*.js", "!./js/main.js", '!./js/*.map'], concatJs);
 	gulp.watch('./**/*.html').on('change', browsersync.reload);
-});
+}
 
-// Default task
-gulp.task('default', gulp.series('vendor', compileSass, concatCss, concatJs));
+gulp.task('dev', gulp.series('default', watch));
