@@ -102,13 +102,6 @@ $(document).ready(function () {
 		offset: "85%"
 	});
 
-	$(".resume-content .btn").waypoint(function () {
-		$(this.element).addClass('animated fadeInUp delay');
-		$(this.element).css("visibility", "visible");
-	}, {
-		offset: "85%"
-	});
-
 	$("hr").waypoint(function () {
 		$(this.element).addClass('grow');
 	}, {
@@ -126,7 +119,7 @@ $(document).ready(function () {
 		toolbar: false
 	});
 
-	// Navbar
+	// Make open mobile-nav background opaque
 	$(".navbar").children().click(function () {
 		if ($('.navbar-toggler').hasClass('collapsed')) {
 			$('#side-nav').css("background", "#110f01");
@@ -136,10 +129,31 @@ $(document).ready(function () {
 			}, 200);
 		}
 	});
-	
+
+	// Close mobile-nav if user clicks on nav-link
 	$('.nav-link').click(function () {
 		setTimeout(function () {
 			$('#side-nav').css("background", "transparent");
 		}, 200);
+	});
+
+	$(document).on('click', function () {
+		// Close mobile-nav if user clicks on body
+		if ($('.navbar-collapse').hasClass('show')) {
+			$('.navbar-collapse').collapse('hide');
+			setTimeout(function () {
+				$('#side-nav').css("background", "transparent");
+			}, 200);
+		}
+	});
+
+	$(document).on('scroll', function () {
+		// Close mobile-nav if user scrolls
+		if ($('.navbar-collapse').hasClass('show')) {
+			$('.navbar-collapse').collapse('hide');
+			setTimeout(function () {
+				$('#side-nav').css("background", "transparent");
+			}, 200);
+		}
 	});
 });
