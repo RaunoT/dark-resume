@@ -26,8 +26,12 @@ $(document).ready(function () {
 
 	// Animations on waypoint
 	$(".social-icons").waypoint(function () {
-		$(".social-icons > a").addClass("animated zoomIn hvr-float");
+		$(".social-icons > a").addClass("animated zoomIn");
 		$(".social-icons").css("visibility", "visible");
+		setTimeout(function () {
+			$(".social-icons > a").removeClass("animated zoomIn");
+			$(".social-icons > a").addClass("hvr-float");
+		}, 1050);
 	}, {
 		offset: "80%"
 	});
@@ -54,50 +58,58 @@ $(document).ready(function () {
 	});
 
 	$("#waypoint-4").waypoint(function () {
-		$("#education-content-1").addClass("animated bounceInUp");
+		$("#education-content-1").addClass("animated fadeInUp");
 		$("#education-content-1").css("visibility", "visible");
 	}, {
 		offset: "100%"
 	});
 
 	$("#waypoint-5").waypoint(function () {
-		$("#education-content-2").addClass("animated bounceInUp");
+		$("#education-content-2").addClass("animated fadeInUp");
 		$("#education-content-2").css("visibility", "visible");
 	}, {
-		offset: "100%"
+		offset: "90%"
 	});
 
-/* 	$("#waypoint-6").waypoint(function () {
-		$("#experience-1").addClass("animated fadeInUp");
-		$("#experience-1").css("visibility", "visible");
-	}, {
-		offset: "100%"
-	}); */
+	/* 	$("#waypoint-6").waypoint(function () {
+			$("#experience-1").addClass("animated fadeInUp");
+			$("#experience-1").css("visibility", "visible");
+		}, {
+			offset: "100%"
+		}); */
 
 	$("#waypoint-7").waypoint(function () {
 		$("#project-1").addClass("animated fadeInRight");
 		$("#project-1").css("visibility", "visible");
 	}, {
-		offset: "110%"
+		offset: "120%"
 	});
 
 	$("#waypoint-8").waypoint(function () {
 		$("#project-2").addClass("animated fadeInRight");
 		$("#project-2").css("visibility", "visible");
 	}, {
-		offset: "110%"
+		offset: "120%"
 	});
 
 	$("#waypoint-9").waypoint(function () {
 		$("#project-3").addClass("animated fadeInRight");
 		$("#project-3").css("visibility", "visible");
 	}, {
-		offset: "110%"
+		offset: "120%"
 	});
 
 	$(".img-project-cover").waypoint(function () {
-		$(this.element).addClass('animated fadeInLeft');
-		$(this.element).css("visibility", "visible");
+		if(!$(this.element).hasClass("animation-complete")) {
+			$(this.element).addClass('animated fadeInLeft');
+			$(this.element).css("visibility", "visible");
+			var currentImage = $(this.element);
+			setTimeout(function () {
+				$(currentImage).removeClass("animated fadeInLeft");
+				$(currentImage).addClass("hvr-backward");
+				$(currentImage).addClass("animation-complete");
+			}, 1050);
+		}
 	}, {
 		offset: "95%"
 	});

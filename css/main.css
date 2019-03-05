@@ -83,9 +83,6 @@ hr {
 .text-accentuated {
   color: #b29600 !important; }
 
-.container-fluid {
-  overflow: hidden; }
-
 .resume-section {
   max-width: 80rem; }
   .resume-section #workflow li {
