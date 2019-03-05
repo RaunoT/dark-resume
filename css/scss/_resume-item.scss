@@ -1,0 +1,49 @@
+// Layout
+
+.resume-section {
+	max-width: 80rem;
+
+	#workflow li {
+		margin-left: -15px;
+	}
+
+	.social-icons a {
+		display: inline-block;
+		height: 3.5rem;
+		width: 3.5rem;
+		background-color: $dark-gray;
+		color: $white;
+		border-radius: 100%;
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 3.5rem;
+		margin-right: 1rem;
+		user-select: none;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			background-color: $primary-color;
+		}
+	}
+
+	.dev-icons {
+		font-size: 3rem;
+		user-select: none;
+
+		.list-inline-item i {
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.img-project-cover {
+		
+		@media (max-width: 767.98px) {
+			margin-bottom: 1rem;	
+		}		
+	}
+}

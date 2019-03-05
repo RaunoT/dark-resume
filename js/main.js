@@ -104,39 +104,39 @@ $(document).ready(function () {
 		offset: "100%"
 	});
 
-	$("#waypoint-6").waypoint(function () {
+/* 	$("#waypoint-6").waypoint(function () {
 		$("#experience-1").addClass("animated fadeInUp");
 		$("#experience-1").css("visibility", "visible");
 	}, {
 		offset: "100%"
-	});
+	}); */
 
 	$("#waypoint-7").waypoint(function () {
-		$("#project-1").addClass("animated fadeInUp");
+		$("#project-1").addClass("animated fadeInRight");
 		$("#project-1").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
 	$("#waypoint-8").waypoint(function () {
-		$("#project-2").addClass("animated fadeInUp");
+		$("#project-2").addClass("animated fadeInRight");
 		$("#project-2").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
 	$("#waypoint-9").waypoint(function () {
-		$("#project-3").addClass("animated fadeInUp");
+		$("#project-3").addClass("animated fadeInRight");
 		$("#project-3").css("visibility", "visible");
 	}, {
 		offset: "110%"
 	});
 
-	$(".img-project").waypoint(function () {
-		$(this.element).addClass('animated fadeInUp');
+	$(".img-project-cover").waypoint(function () {
+		$(this.element).addClass('animated fadeInLeft');
 		$(this.element).css("visibility", "visible");
 	}, {
-		offset: "85%"
+		offset: "95%"
 	});
 
 	$("hr").waypoint(function () {

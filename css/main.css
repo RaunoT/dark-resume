@@ -48,7 +48,7 @@ h3 {
 h1 {
   font-size: 6.5rem;
   line-height: 5.5rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 767.98px) {
     h1 {
       font-size: 5rem;
       line-height: 5rem; } }
@@ -66,12 +66,9 @@ a {
 
 hr {
   border-top: 1px #343a40 solid;
-  margin: 3rem;
+  margin: 3rem 0rem;
   width: 0%;
   transition: width 2s ease-out; }
-  @media (max-width: 992px) {
-    hr {
-      margin-left: 1rem; } }
 
 .lead {
   font-size: 1.25rem;
@@ -86,8 +83,10 @@ hr {
 .text-accentuated {
   color: #b29600 !important; }
 
+.container-fluid {
+  overflow: hidden; }
+
 .resume-section {
-  overflow: hidden;
   max-width: 80rem; }
   .resume-section #workflow li {
     margin-left: -15px; }
@@ -118,12 +117,9 @@ hr {
             user-select: none; }
     .resume-section .dev-icons .list-inline-item i:hover {
       color: #b29600; }
-  .resume-section .img-project {
-    max-height: 5rem; }
-    @media (max-width: 992px) {
-      .resume-section .img-project {
-        max-height: 2rem;
-        margin-top: 5px; } }
+  @media (max-width: 767.98px) {
+    .resume-section .img-project-cover {
+      margin-bottom: 1rem; } }
 
 #side-nav {
   background: transparent;
@@ -165,7 +161,7 @@ hr {
 
 .dev-icons,
 .social-icons,
-.img-project,
+.img-project-cover,
 #workflow,
 #languages,
 #education-content-1,
@@ -200,7 +196,7 @@ hr.grow {
   width: 33%; }
 
 .delay {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
 
 /*# sourceMappingURL=main.css.map */

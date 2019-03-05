@@ -26,7 +26,7 @@ h1 {
 	font-size: 6.5rem;
 	line-height: 5.5rem;
 
-	@media (max-width: 768px) {
+	@media (max-width: 767.98px) {
 		font-size: 5rem;
 		line-height: 5rem;
 	}
@@ -52,13 +52,9 @@ a {
 
 hr {
 	border-top: 1px $dark-gray solid;
-	margin: 3rem;
+	margin: 3rem 0rem;
 	width: 0%;
 	transition: width 2s ease-out;
-
-	@media (max-width: 992px) {
-		margin-left: 1rem;
-	}
 }
 
 .lead {
@@ -75,4 +71,8 @@ hr {
 
 .text-accentuated {
 	color: $primary-color !important;
+}
+
+.container-fluid {
+	overflow: hidden;
 }
