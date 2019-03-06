@@ -32,7 +32,7 @@ body {
   color: #ffffff;
   overflow-x: hidden;
   padding-top: 3rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     body {
       padding-top: 0;
       padding-left: 17.5rem; } }
@@ -87,6 +87,10 @@ hr {
   max-width: 80rem; }
   .resume-section #workflow li {
     margin-left: -15px; }
+  @media (min-width: 1200px) {
+    .resume-section#projects .col-xl-2 {
+      flex: 0 0 20%;
+      max-width: 20%; } }
   .resume-section .social-icons a {
     display: inline-block;
     height: 3.5rem;
@@ -121,7 +125,7 @@ hr {
 #side-nav {
   background: transparent;
   text-align: center; }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     #side-nav {
       flex-direction: column;
       width: 17.5rem; }

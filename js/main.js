@@ -63,12 +63,15 @@ $(document).ready(function () {
 
 	// Animations on waypoint
 	$(".social-icons").waypoint(function () {
-		$(".social-icons > a").addClass("animated zoomIn");
-		$(".social-icons").css("visibility", "visible");
-		setTimeout(function () {
-			$(".social-icons > a").removeClass("animated zoomIn");
-			$(".social-icons > a").addClass("hvr-float");
-		}, 1050);
+		if (!$(this.element).hasClass("animation-complete")) {
+			$(".social-icons > a").addClass("animated zoomIn");
+			$(".social-icons").css("visibility", "visible");
+			setTimeout(function () {
+				$(".social-icons > a").removeClass("animated zoomIn");
+				$(".social-icons > a").addClass("hvr-float");
+				$(".social-icons").addClass("animation-complete");
+			}, 1000);
+		}
 	}, {
 		offset: "80%"
 	});
@@ -137,7 +140,7 @@ $(document).ready(function () {
 	});
 
 	$(".img-project-cover").waypoint(function () {
-		if(!$(this.element).hasClass("animation-complete")) {
+		if (!$(this.element).hasClass("animation-complete")) {
 			$(this.element).addClass('animated fadeInLeft');
 			$(this.element).css("visibility", "visible");
 			var currentImage = $(this.element);
@@ -145,7 +148,7 @@ $(document).ready(function () {
 				$(currentImage).removeClass("animated fadeInLeft");
 				$(currentImage).addClass("hvr-backward");
 				$(currentImage).addClass("animation-complete");
-			}, 1050);
+			}, 1000);
 		}
 	}, {
 		offset: "95%"

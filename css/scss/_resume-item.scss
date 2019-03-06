@@ -7,6 +7,16 @@
 		margin-left: -15px;
 	}
 
+	&#projects {
+
+		@media (min-width: 1200px) {
+			.col-xl-2 {
+				flex: 0 0 20%;
+				max-width: 20%;
+			}
+		}
+	}
+
 	.social-icons a {
 		display: inline-block;
 		height: 3.5rem;

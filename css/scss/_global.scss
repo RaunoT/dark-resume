@@ -7,7 +7,7 @@ body {
 	overflow-x: hidden;
 	padding-top: 3rem;
 
-	@media (min-width: 992px) {
+	@media (min-width: 1200px) {
 		padding-top: 0;
 		padding-left: $sidebar-width;
 	}
