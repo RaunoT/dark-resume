@@ -111,16 +111,54 @@ hr {
     .resume-section .social-icons a:hover {
       background-color: #b29600; }
   .resume-section .dev-icons {
-    font-size: 3rem;
+    font-size: 2.5rem;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
     .resume-section .dev-icons .list-inline-item i:hover {
       color: #b29600; }
-  @media (max-width: 767.98px) {
+    .resume-section .dev-icons .list-inline-item i.hvr-float {
+      vertical-align: 0; }
+  @media (max-width: 991.98px) {
     .resume-section .img-project-cover {
       margin-bottom: 1rem; } }
+  .resume-section .project-cover-wrap {
+    position: relative;
+    padding-right: 0;
+    margin-right: 15px; }
+    .resume-section .project-cover-wrap .hvr-backward:hover,
+    .resume-section .project-cover-wrap .hvr-backward:focus,
+    .resume-section .project-cover-wrap .hvr-backward:active {
+      -webkit-transform: translateX(-15px);
+      transform: translateX(-15px); }
+    .resume-section .project-cover-wrap:hover .img-project-cover {
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1); }
+    .resume-section .project-cover-wrap:hover .project-cover-header-wrap {
+      visibility: visible;
+      opacity: 1;
+      right: -12px;
+      opacity: 1;
+      transition: 0.3s; }
+    .resume-section .project-cover-wrap .project-cover-header-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      opacity: 0; }
+      .resume-section .project-cover-wrap .project-cover-header-wrap .project-cover-header {
+        text-orientation: upright;
+        -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+        text-transform: uppercase;
+        margin: auto;
+        font-size: 0.5rem;
+        color: #b29600; }
 
 #side-nav {
   background: transparent;
