@@ -43,14 +43,20 @@
 		font-size: 2.5rem;
 		user-select: none;
 
-		.list-inline-item i {
+		.list-inline-item {
 
-			&:hover {
-				color: $primary-color;
+			@media (max-width: 1200px) {
+				margin: 0;
 			}
 
-			&.hvr-float {
-				vertical-align: 0;
+			i {
+				&:hover {
+					color: $primary-color;
+				}
+
+				&.hvr-float {
+					vertical-align: 0;
+				}
 			}
 		}
 	}
@@ -76,9 +82,11 @@
 
 		&:hover {
 
-			.img-project-cover {
-				// transition: filter 1s;
-				filter: grayscale(1);
+			@media (min-width: 1200px) {
+				.img-project-cover {
+					// transition: filter 1s;
+					filter: grayscale(1);
+				}
 			}
 
 			.project-cover-header-wrap {
