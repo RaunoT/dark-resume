@@ -67,6 +67,12 @@ hr {
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1.5rem;
+
+	.hide-mobile {
+		@media (max-width: 514px) {
+			visibility: hidden;
+		}
+	}
 }
 
 .text-accentuated {

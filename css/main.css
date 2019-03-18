@@ -79,6 +79,9 @@ hr {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem; }
+  @media (max-width: 514px) {
+    .subheading .hide-mobile {
+      visibility: hidden; } }
 
 .text-accentuated {
   color: #b29600 !important; }
@@ -182,8 +185,8 @@ hr {
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2); }
     #side-nav .img-profile:hover {
-      -webkit-filter: saturate(1.2);
-              filter: saturate(1.2); }
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1); }
   #side-nav .navbar-toggler {
     background: #110f01;
     outline: none;

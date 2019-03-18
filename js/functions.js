@@ -1,6 +1,7 @@
 // Use strict
 (function ($) {
 	"use strict";
+
 	$(document).ready(function () {
 
 		$(document).on('click', function () {
@@ -120,12 +121,12 @@
 			offset: "90%"
 		});
 
-		/* 	$("#waypoint-6").waypoint(function () {
+		$("#waypoint-6").waypoint(function () {
 				$("#experience-1").addClass("animated fadeInUp");
 				$("#experience-1").css("visibility", "visible");
 			}, {
 				offset: "100%"
-			}); */
+			});
 
 		$("#waypoint-7").waypoint(function () {
 			$("#project-1").addClass("animated fadeInRight");
@@ -172,12 +173,12 @@
 		}, {
 			offset: "75%"
 		});
-
-		// Don't add hover effect on mobile
+		
 		if ($(window).width() >= 992) {
 			$("#project-1").addClass("delay");
 			$("#project-2").addClass("delay");
 			$("#project-3").addClass("delay");
 		}
 	});
+
 })(jQuery);
