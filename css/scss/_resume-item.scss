@@ -1,20 +1,8 @@
-// Layout
-
 .resume-section {
 	max-width: 80rem;
 
 	#workflow li {
 		margin-left: -15px;
-	}
-
-	&#projects {
-
-		@media (min-width: 1200px) {
-			.col-xl-2 {
-				flex: 0 0 20%;
-				max-width: 20%;
-			}
-		}
 	}
 
 	.social-icons a {
@@ -44,10 +32,7 @@
 		user-select: none;
 
 		.list-inline-item {
-
-			@media (max-width: 1200px) {
 				margin: 0;
-			}
 
 			i {
 				&:hover {
@@ -84,14 +69,12 @@
 
 			@media (min-width: 1200px) {
 				.img-project-cover {
-					// transition: filter 1s;
 					filter: grayscale(1);
 				}
 			}
 
 			.project-cover-header-wrap {
 				visibility: visible;
-				opacity: 1;
 				right: -12px;
 				opacity: 1;
 				transition: 0.3s;

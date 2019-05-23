@@ -1,5 +1,3 @@
-// Animations
-
 // Hide before animation
 .dev-icons,
 .social-icons,
@@ -15,15 +13,9 @@
 	visibility: hidden;
 }
 
-// Collapsed navbar animation
-.navbar-toggler.collapsed .icon-bar:nth-of-type(1) {
-	transform: translate3d(0, 0, 0) rotate(0deg);
-}
-
-.navbar-toggler.collapsed .icon-bar:nth-of-type(2) {
-	transform: translate3d(0, 0, 0) rotate(0deg);
-}
-
+// Navbar collapse animation
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1),
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2),
 .navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
 	transform: translate3d(0, 0, 0) rotate(0deg);
 }
@@ -36,10 +28,12 @@
 	transform: translate3d(0, -6px, 0);
 }
 
-hr.grow {
+// Grow animation
+.grow {
 	width: 33%;
 }
 
+// Animation delay
 .delay {
 	animation-delay: 0.2s;
 }

@@ -1,4 +1,3 @@
-// Use strict
 (function ($) {
 	"use strict";
 
@@ -122,11 +121,11 @@
 		});
 
 		$("#waypoint-6").waypoint(function () {
-				$("#experience-1").addClass("animated fadeInUp");
-				$("#experience-1").css("visibility", "visible");
-			}, {
-				offset: "100%"
-			});
+			$("#experience-1").addClass("animated fadeInUp");
+			$("#experience-1").css("visibility", "visible");
+		}, {
+			offset: "100%"
+		});
 
 		$("#waypoint-7").waypoint(function () {
 			$("#project-1").addClass("animated fadeInRight");
@@ -173,7 +172,7 @@
 		}, {
 			offset: "75%"
 		});
-		
+
 		if ($(window).width() >= 992) {
 			$("#project-1").addClass("delay");
 			$("#project-2").addClass("delay");

@@ -1,8 +1,7 @@
-// Nav
-
-#side-nav {
+.navbar {
 	background: transparent;
 	text-align: center;
+	padding: 1rem;
 
 	@media (min-width: 1200px) {
 		flex-direction: column;
@@ -11,7 +10,6 @@
 		.navbar-nav {
 			flex-direction: column;
 		}
-
 	}
 
 	.nav-item .nav-link {
@@ -26,7 +24,7 @@
 		border: 0.5rem solid fade-out($white, 0.8);
 
 		&:hover {
-			filter: grayscale(1);
+			filter: grayscale(0.4);
 		}
 	}
 
@@ -36,10 +34,6 @@
 		padding: 0.5rem;
 		border: 1px $white solid;
 		border-radius: 0;
-
-		&:focus {
-			outline-color: lighten($primary-color, 5%);
-		}
 
 		.icon-bar {
 			width: 1.5rem;
