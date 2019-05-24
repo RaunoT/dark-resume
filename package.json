@@ -2,10 +2,12 @@
   "name": "dark-resume",
   "version": "1.0.0",
   "description": "Dark twist on a popular resume template",
-  "repository": "https://github.com/RaunoT/dark-resume",
+  "repository": "https://github.com/RaunoT/raunot-home",
   "main": "index.html",
   "keywords": [
     "bootstrap",
+    "gulp",
+    "browsersync",
     "resume-template"
   ],
   "author": {
