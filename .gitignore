@@ -46,3 +46,6 @@ dist/
 
 # Visual Studio Code user settings
 .vscode/
+
+# macOS meta
+.DS_Store
