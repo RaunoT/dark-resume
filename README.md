@@ -12,9 +12,7 @@ After installation, run `yarn` and then `gulp dev` which will open up a preview 
 
 ## Gulp Tasks
 
-* `gulp` - The default task that compiles Sass, concatenates CSS & JS files and moves dependencies to vendor folders
-
-* `gulp vendor` - Moves dependencies to vendor folders
+* `gulp` - Default task that compiles Sass, concatenates CSS & JS files, creates sourcemaps and pulls dependencies
 
 * `gulp dev` - Runs Browsersync in your browser to live reload any changes made
 
