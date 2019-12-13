@@ -8,7 +8,7 @@ Dark Resume takes the original concept of [Resume](https://startbootstrap.com/te
 
 Clone the repo: `git clone https://github.com/RaunoT/raunot-home`
 
-After installation, run `npm install` and then `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files and live reload the browser when changes are saved.
+After installation, run `yarn` and then `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files and live reload the browser when changes are saved.
 
 ## Gulp Tasks
 
@@ -22,6 +22,6 @@ After installation, run `npm install` and then `gulp dev` which will open up a p
 
 ## Copyright and License
 
-Copyright © 2019 Rauno Tegelmann.
+Copyright © 2020 Rauno Tegelmann.
 
 Released under the [MIT](https://github.com/RaunoT/raunot-home/blob/master/LICENSE) license.
