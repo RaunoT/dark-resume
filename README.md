@@ -1,4 +1,4 @@
-# Rauno T | Homepage
+# Dark Resume
 
 Improves on the original concept of [Resume](https://startbootstrap.com/template-overviews/resume/) by [Start Bootstrap](http://startbootstrap.com/), by adding tons of animations and giving the whole template a dark makeover for a classier and stealthier look. The theme features a fixed sidebar with content sections, to build a simple yet elegant resume.
 
