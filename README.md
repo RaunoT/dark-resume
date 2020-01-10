@@ -1,4 +1,4 @@
-# Dark Resume
+# Rauno T | Homepage
 
 Improves on the original concept of [Resume](https://startbootstrap.com/template-overviews/resume/) by [Start Bootstrap](http://startbootstrap.com/), by adding tons of animations and giving the whole template a dark makeover for a classier and stealthier look. The theme features a fixed sidebar with content sections, to build a simple yet elegant resume.
 
@@ -6,7 +6,7 @@ Improves on the original concept of [Resume](https://startbootstrap.com/template
 
 ## Setup
 
-Clone the repo: `git clone https://github.com/RaunoT/raunot-home`
+Clone the repo: `git clone https://github.com/RaunoT/raunot`
 
 After installation, run `yarn` and then `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files and live reload the browser when changes are saved.
 

@@ -1,0 +1,24 @@
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+
+.heading {
+	@extend h1;
+
+	line-height: 1;
+	margin: 0;
+}
+
+.subheading {
+	@extend h3;
+
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin-bottom: spacer(5);
+}
+
+p:last-child {
+	margin-bottom: 0;
+}

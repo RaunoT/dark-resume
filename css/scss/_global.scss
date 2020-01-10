@@ -1,83 +1,11 @@
 body {
-	@include body-font;
-	background: $dark;
-	color: $white;
-	overflow-x: hidden;
-	padding-top: 3rem;
-
-	@media (min-width: 1200px) {
-		padding-top: 0;
-		padding-left: $sidebar-width;
-	}
+	padding-left: $sidebar-width;
 }
 
-h1,
-h2,
-h3 {
-	@include heading-font;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: $white;
-}
-
-h1 {
-	font-size: 6.5rem;
-	line-height: 5.5rem;
-
-	@media (max-width: 767.98px) {
-		font-size: 5rem;
-		line-height: 5rem;
-	}
-}
-
-h2 {
-	font-size: 3.5rem;
-	// color: lighten($primary-color, 15%);
-}
-
-h3 {
-	font-size: 2rem;
-}
-
-a {
-	color: $primary-color;
-
-	&:hover,
-	&:focus,
-	&:active {
-		color: darken($primary-color, 15%);
-	}
+.wrap {
+	padding: spacer(5) 0;
 }
 
 hr {
-	border-top: 1px $dark-gray solid;
-	margin: 3rem 0rem;
-	width: 0%;
-	transition: width 2s ease-out;
-}
-
-.lead {
-	font-size: 1.25rem;
-	font-weight: 400;
-
-	&-header {
-		@extend h1;
-	}
-}
-
-.subheading {
-	@include heading-font;
-	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 1.5rem;
-
-	.hide-mobile {
-		@media (max-width: 514px) {
-			visibility: hidden;
-		}
-	}
-}
-
-.text-accentuated {
-	color: $primary-color !important;
+	border-color: $gray;
 }

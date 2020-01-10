@@ -1,13 +1,22 @@
-// Import bootstrap
-@import "/node_modules/bootstrap/scss/bootstrap";
-// Import dependencies
-@import "/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
-@import "/node_modules/animate.css/animate.min.css";
-@import "/node_modules/hover.css/css/hover-min.css";
-
+// Variables
 @import "variables";
-@import "mixins";
+
+// Import dependencies
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "node_modules/animate.css/animate.min.css";
+@import "/node_modules/hover.css/css/hover-min.css";
+@import "/node_modules/devicon/devicon.min.css";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+// SCSS
 @import "global";
-@import "resume-item";
-@import "nav";
+@import "mixins";
 @import "animations";
+@import "icons";
+@import "sections";
+@import "sidebar";
+@import "text";
+@import "navigation";
+@import "resume-item";

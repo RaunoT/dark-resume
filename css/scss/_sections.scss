@@ -1,0 +1,11 @@
+section {
+	padding: spacer(5) 0;
+
+	&:first-child {
+		padding-top: 0;
+	}
+
+	h2 {
+		margin-bottom: spacer(5);
+	}
+}

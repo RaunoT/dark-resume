@@ -1,7 +1,76 @@
-// Variables
-
-$primary-color: #b29600;
-$dark-gray: #343a40;
-$dark: #110f01;
-$white: #ffffff;
 $sidebar-width: 17.5rem;
+
+// Colors
+$gold:   #b29600;
+
+$white: #fff;
+$gray : #343a40;
+$dark : #110f01;
+$black: #000;
+
+$theme-colors: (
+  "gold" : $gold,
+  "white": $white,
+  "gray" : $gray,
+  "dark" : $dark,
+  "black": $black,
+);
+
+$body-bg:    $dark;
+$body-color: $white;
+$link-color: $gold;
+
+// Spacers
+$spacer: 8px;
+$spacers: (
+  0.5: $spacer / 2,
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+  11: $spacer * 11,
+  12: $spacer * 12,
+  13: $spacer * 13,
+  14: $spacer * 14,
+  15: $spacer * 15,
+  16: $spacer * 16,
+  17: $spacer * 17,
+  18: $spacer * 18,
+  19: $spacer * 19,
+  20: $spacer * 20,
+);
+
+@function spacer($spacer-size) {
+  @return map-get($spacers, $spacer-size);
+}
+
+// Fonts
+$font-family-base:       'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$headings-font-family:   'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$font-size-xl:   1.25rem;
+$font-size-lg:   1.125rem;
+$font-size-base: 1rem;
+$font-size-sm:   0.875rem;
+$font-size-xs:   0.75rem;
+
+$paragraph-margin-bottom: 1.5rem;
+
+$headings-color:         $white;
+$headings-font-weight:   bold;
+$headings-margin-bottom: map-get($spacers, 3);
+
+$h1-font-size: 6.5rem;
+$h2-font-size: 3.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.125rem;
+$h6-font-size: 1rem;
+
+$grid-gutter-width: $spacer * 3;
