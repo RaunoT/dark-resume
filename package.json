@@ -1,6 +1,6 @@
 {
   "name": "dark-resume",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Dark twist on a popular resume template",
   "repository": "https://github.com/RaunoT/raunot-home",
   "main": "index.html",
@@ -13,7 +13,7 @@
   "author": {
     "name": "Rauno Tegelmann",
     "email": "raunoot@gmail.com",
-    "url": "https://raunot.ee"
+    "url": "https://rauno.eu"
   },
   "license": "MIT",
   "dependencies": {
