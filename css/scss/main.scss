@@ -1,11 +1,12 @@
-// Import bootstrap
-@import "/node_modules/bootstrap/scss/bootstrap";
-// Import dependencies
+// Variables
+@import "variables";
+
+// Dependencies
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 @import "/node_modules/animate.css/animate.min.css";
 @import "/node_modules/hover.css/css/hover-min.css";
 
-@import "variables";
 @import "mixins";
 @import "global";
 @import "resume-item";

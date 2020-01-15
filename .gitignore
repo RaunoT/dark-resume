@@ -1,17 +1,18 @@
-# Sass
-.sass-cache/
+# Cache
+.sass-cache
 
-# CSS sourcemaps
+# Sourcemaps
 *.css.map
-
-# JS sourcemaps
 *.js.map
 
-# Node modules
-node_modules/
-
 # Distribution/build folder
-dist/
+dist
+
+# Node modules
+node_modules
 
 # Visual Studio Code user settings
-.vscode/
+.vscode
+
+# macOS
+.DS_Store
