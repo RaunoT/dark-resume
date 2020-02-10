@@ -127,6 +127,13 @@
 			offset: "100%"
 		});
 
+		$("#waypoint-6-2").waypoint(function () {
+			$("#experience-2").addClass("animated fadeInUp");
+			$("#experience-2").css("visibility", "visible");
+		}, {
+			offset: "100%"
+		});
+
 		$("#waypoint-7").waypoint(function () {
 			$("#project-1").addClass("animated fadeInRight");
 			$("#project-1").css("visibility", "visible");
