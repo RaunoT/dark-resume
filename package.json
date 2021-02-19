@@ -22,13 +22,13 @@
     "animate.css": "^3.7.0",
     "bootstrap": "^4.4.1",
     "hover.css": "^2.3.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "jquery.easing": "^1.4.1",
     "popper.js": "^1.16.0",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.14",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
